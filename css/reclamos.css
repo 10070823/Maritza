@@ -1,0 +1,120 @@
+/* Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri', sans-serif;
+    background-image: url('../images/reclamosclientes.jpg'); /* Cambia la imagen según tu diseño */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+/* Estilo para el encabezado con Flexbox */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d8b466;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: white;
+    margin: 0;
+}
+
+.regresar-boton {
+    float: right; /* Alinea el botón a la derecha */
+    background-color: #ec6767;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.regresar-boton:hover {
+    background-color: #e74c3c;
+}
+
+/* Contenedor general del formulario */
+.formulario-reclamos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo del formulario */
+.form-reclamos {
+    width: 400px;
+    background: #d8b466; /* Color del formulario */
+    padding: 30px;
+    border-radius: 40px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    text-align: center;
+}
+
+.form-reclamos h4 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: white;
+}
+
+/* Inputs y textarea */
+.form-reclamos input[type="text"],
+.form-reclamos input[type="email"],
+.form-reclamos textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Efecto focus */
+.form-reclamos input:focus,
+.form-reclamos textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px #ec6767;
+}
+
+/* Botón */
+.botons {
+    width: 100%;
+    background-color: #ec6767; /* Color del botón */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botons:hover {
+    background-color: #e74c3c; /* Color hover */
+}
+
+/* Derechos de autor en la parte inferior */
+.footer {
+    background-color: #d8b466;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}

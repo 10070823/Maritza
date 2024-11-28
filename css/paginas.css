@@ -1,0 +1,142 @@
+/* General */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h2 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAV */
+.fondo-paginaclientes {
+    background-color: #ec6767;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav__link {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav__links {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav__links:hover {
+    color: #d8b466;
+}
+
+.nav__menu {
+    display: none;
+}
+
+/* Carrusel */
+.carousel-inner {
+    margin-bottom: 0; /* Elimina el margen inferior del carrusel */
+}
+
+#carouselExampleSlidesOnly {
+    margin-bottom: 0; /* Asegura que no haya espacio extra */
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+    max-height: calc(100vh - 140px); /* Ajusta la altura para evitar desbordes */
+}
+
+/* Footer */
+.fondo-paginaclientes2 {
+    background-color: #d8b466;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0; /* Elimina cualquier margen */
+    margin-top: auto; /* Asegura que el footer esté al final */
+}
+
+.footer__social {
+    margin-bottom: 15px;
+}
+
+.footer__icons {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer__icons:hover {
+    transform: scale(1.1);
+}
+
+.footer__copyrigth {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .nav__link {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav__menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__link--menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #ec6767;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .nav__menu img {
+        width: 30px;
+    }
+
+    .nav__menu.active + .nav__link--menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+}

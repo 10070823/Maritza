@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333333; /* Texto en tono oscuro para contraste */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d8b466; /* Color dorado */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff; /* Título en blanco */
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+form {
+    background-color: #d8b466; /* Fondo gris claro para el formulario */
+    padding: 20px;
+    border: 1px solid #ec6767; /* Borde dorado */
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ec6767; /* Texto de etiqueta en rojo claro */
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d8b466; /* Borde dorado */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #ec6767; /* Fondo del botón en rojo claro */
+    color: #ffffff; /* Texto del botón en blanco */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d85656; /* Color más oscuro al pasar el cursor */
+}
+
+footer {
+    background-color: #d8b466; /* Fondo dorado */
+    color: #ffffff; /* Texto en blanco */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.imagen-recuperarcontraseña{
+    background-image: url('../images/recuperar.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.regresar {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-regresar {
+    display: inline-block;
+    background-color: #ec6767; /* Fondo en rojo claro */
+    color: #ffffff; /* Texto en blanco */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-regresar:hover {
+    background-color: #d85656; /* Color más oscuro al pasar el cursor */
+}
+
+.mensaje {
+    color: green;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.mensaje.error {
+    color: red;
+}
